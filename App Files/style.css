@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #222;
+}
+
+.card {
+  background: #1a2980; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #26d0ce,
+    #1a2980
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #26d0ce,
+    #1a2980
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  max-width: 470px;
+  width: 90%;
+  margin: 100px auto 0;
+  padding: 40px 35px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search input {
+    padding: 10px 25px;
+    outline: none;
+    border-radius: 50px;
+    border: none;
+    margin-right: 16px;
+    background-color: rgb(223, 255, 255);
+    font-size: 18px;
+    color: #555;
+    height: 60px;
+    flex: 1;
+    min-width: 200px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .search input:hover {
+    background-color: #d5fafd; /* Light blue background on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  }
+  
+  .search button {
+    border-radius: 50%;
+    background-color: rgb(226, 252, 252);
+    border: none;
+    outline: none;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth scaling and shadow on hover */
+  }
+  
+  .search button:hover {
+    background-color: #ace9f1; /* Slightly darker color on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow on hover */
+  }
+  
+  .search button img {
+    width: 20px;
+    margin: auto 0;
+  }
+  
+  .search button:active {
+    transform: scale(0.95); /* Button "press" effect */
+    box-shadow: none; /* Remove shadow on press */
+  }
+  
+  
+  /* For smaller screens (tablets and mobile devices) */
+  @media (max-width: 768px) {
+    .search input {
+      font-size: 16px;
+      padding: 8px 20px;
+      height: 50px;
+    }
+  
+    .search button {
+      height: 50px;
+      width: 50px;
+    }
+  
+    .search button img {
+      width: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search input {
+      font-size: 14px;
+      padding: 6px 15px;
+      height: 40px;
+      margin-right: 8px;
+    }
+  
+    .search button {
+      height: 40px;
+      width: 40px;
+    }
+  
+    .search button img {
+      width: 16px;
+    }
+  }
+  
+.weather{
+    margin: 40px;
+}
+
+.weather-icon {
+  /* height: 150px; */
+  width: 150px;
+}
+
+.weather h1{
+    font-size:60px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.details{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+@media(max-width:470px){
+    .details{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+.col{
+    display: flex;
+
+}
+
+.imgg{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.humidity , .wind{
+    font-size: 18px;
+    margin-top: -6px;
+}
+
+.weather{
+    display: none;
+}
+
+.error{
+    font-family: 'Poppins', sans-serif;
+  color: #696969; /* Striking red color */
+  background-color: #e6f8ff; /* Light background for contrast */
+  /* border: 2px solid #59cdff; */
+  border-radius: 10px; /* Rounded corners for smooth look */
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-top: 20px;
+  /* margin: 20px 0; */
+  animation: fadeIn 0.8s ease-in-out; /* Smooth fade-in effect */
+  display: none;
+}
