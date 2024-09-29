@@ -158,11 +158,13 @@ body {
 
 .col{
     display: flex;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .imgg{
-    width: 30px;
+  
+    width: 40px;
     margin-right: 10px;
 }
 
