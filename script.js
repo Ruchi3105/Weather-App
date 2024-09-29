@@ -24,9 +24,11 @@ async function checkWeather(city) {
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
 
-    const currWeather = data.weather[0].main;
-
-    weatherIcon.src = `/images/${currWeather}.png`;
+    const icon = data.weather[0].icon;
+    const description = data.weather[0].description;
+    
+    document.querySelector(".description").innerHTML = description;
+    weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
     document.querySelector(".weather").style.display = "block";
     error.style.display = "none"
   }

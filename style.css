@@ -69,13 +69,13 @@ body {
   }
   
   .search button:hover {
-    background-color: #ace9f1; /* Slightly darker color on hover */
+    background-color: #c2edf3; /* Slightly darker color on hover */
     transform: scale(1.1); /* Slightly enlarge the button on hover */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow on hover */
   }
   
   .search button img {
-    width: 20px;
+    width: 30px;
     margin: auto 0;
   }
   
@@ -189,4 +189,14 @@ body {
   /* margin: 20px 0; */
   animation: fadeIn 0.8s ease-in-out; /* Smooth fade-in effect */
   display: none;
+}
+
+.desc{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: rgb(178, 211, 210);
+  text-transform: capitalize;
 }
