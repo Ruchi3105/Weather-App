@@ -26,7 +26,7 @@ async function checkWeather(city) {
 
     const currWeather = data.weather[0].main;
 
-    weatherIcon.src = `images/${currWeather}.png`;
+    weatherIcon.src = `/images/${currWeather}.png`;
     document.querySelector(".weather").style.display = "block";
     error.style.display = "none"
   }
